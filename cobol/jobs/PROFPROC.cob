@@ -1,0 +1,57 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROFPROC.
+
+       ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT PROFESSORES ASSIGN TO "cobol/data/professores.csv"
+               ORGANIZATION IS LINE SEQUENTIAL.
+           SELECT RELATORIO ASSIGN TO "cobol/output/relatorio.txt"
+               ORGANIZATION IS LINE SEQUENTIAL.
+
+       DATA DIVISION.
+       FILE SECTION.
+
+       FD PROFESSORES.
+       01 LINHA-PROFESSOR PIC X(200).
+
+       FD RELATORIO.
+       01 LINHA-RELATORIO PIC X(200).
+
+       WORKING-STORAGE SECTION.
+       01 TOTAL-PROFESSORES PIC 9(5) VALUE 0.
+       01 TOTAL-CARGA       PIC 9(7) VALUE 0.
+       01 CARGA             PIC 9(3) VALUE 0.
+       01 FIM-ARQUIVO       PIC X VALUE "N".
+
+       PROCEDURE DIVISION.
+           OPEN INPUT PROFESSORES
+                OUTPUT RELATORIO.
+
+           PERFORM UNTIL FIM-ARQUIVO = "S"
+               READ PROFESSORES
+                   AT END
+                       MOVE "S" TO FIM-ARQUIVO
+                   NOT AT END
+                       ADD 1 TO TOTAL-PROFESSORES
+                       MOVE 40 TO CARGA
+                       ADD CARGA TO TOTAL-CARGA
+               END-READ
+           END-PERFORM.
+
+           MOVE "MCP CONTROL CENTER - COBOL BATCH" TO LINHA-RELATORIO
+           WRITE LINHA-RELATORIO.
+
+           MOVE TOTAL-PROFESSORES TO LINHA-RELATORIO
+           WRITE LINHA-RELATORIO.
+
+           MOVE TOTAL-CARGA TO LINHA-RELATORIO
+           WRITE LINHA-RELATORIO.
+
+           CLOSE PROFESSORES RELATORIO.
+
+           DISPLAY "COBOL JOB CONCLUIDO."
+           DISPLAY "PROFESSORES: " TOTAL-PROFESSORES.
+           DISPLAY "CARGA TOTAL: " TOTAL-CARGA.
+
+           STOP RUN.
