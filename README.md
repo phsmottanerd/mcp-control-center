@@ -1,5 +1,4 @@
-
-                                  ████████████████████████████████████████████████████████████
+      ████████████████████████████████████████████████████████████
 
  ███╗   ███╗ ██████╗██████╗     ██████╗ ██████╗ ███╗   ██╗
  ████╗ ████║██╔════╝██╔══██╗   ██╔════╝██╔═══██╗████╗  ██║
@@ -16,9 +15,11 @@
 
 
 
-# 🟢 MCP CONTROL CENTER
 
-## `MAINFRAME • COBOL • JAVA • AUTOMATION • LINUX • AI`
+
+
+
+
 
 > **A technical control center designed to connect Mainframe concepts, COBOL workloads, Java services, Linux environments, automation and modern development practices in a single project.**
 
