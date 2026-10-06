@@ -1,652 +1,265 @@
-     # 🟢 MCP CONTROL CENTER
 
-## `MAINFRAME • COBOL • JAVA • AUTOMATION • LINUX • AI`
+# MCP Control Center
 
+**MCP Control Center** é uma plataforma experimental de **controle, automação e integração de tecnologias de software**, construída com uma arquitetura inspirada em ambientes corporativos de **Mainframe, operações de TI, automação de processos e sistemas distribuídos**.
 
+O projeto nasceu com uma ideia central: **unir tecnologias tradicionais de missão crítica com ferramentas modernas de desenvolvimento e Inteligência Artificial Generativa**, criando um ambiente único para organizar, monitorar e executar diferentes componentes de uma operação tecnológica.
 
+```text
+                         ┌─────────────────────────────┐
+                         │      MCP CONTROL CENTER     │
+                         │   MAINFRAME OPERATIONS      │
+                         └──────────────┬──────────────┘
+                                        │
+              ┌─────────────────────────┼─────────────────────────┐
+              │                         │                         │
+              ▼                         ▼                         ▼
+       ┌─────────────┐          ┌─────────────┐          ┌─────────────┐
+       │    COBOL    │          │    JAVA     │          │   PYTHON    │
+       │    BATCH    │          │ SPRING BOOT │          │ AUTOMATION  │
+       └──────┬──────┘          └──────┬──────┘          └──────┬──────┘
+              │                        │                         │
+              └────────────────────────┼─────────────────────────┘
+                                       ▼
+                            ┌─────────────────────┐
+                            │   CONTROL CENTER    │
+                            │   PROCESSING LAYER  │
+                            └──────────┬──────────┘
+                                       │
+                  ┌────────────────────┼────────────────────┐
+                  ▼                    ▼                    ▼
+             ┌─────────┐        ┌────────────┐       ┌────────────┐
+             │ LINUX   │        │ ANALYTICS  │       │    LOGS    │
+             │   WSL   │        │ & METRICS  │       │ MONITORING │
+             └─────────┘        └────────────┘       └────────────┘
+                                       │
+                                       ▼
+                              ┌──────────────────┐
+                              │ GENERATIVE AI    │
+                              │ INTELLIGENCE     │
+                              └──────────────────┘
+```
 
+## 🟢 Uma ponte entre Mainframe e tecnologia moderna
 
+O MCP Control Center foi pensado para representar uma arquitetura onde tecnologias com décadas de presença no mercado podem coexistir com ferramentas modernas.
 
+No núcleo conceitual estão **COBOL e Mainframe**, representando processamento corporativo e workloads tradicionais, enquanto **Java/Spring Boot, Python, Linux/WSL e JavaScript** fornecem uma camada moderna para desenvolvimento, automação, integração e controle.
 
-
-> **A technical control center designed to connect Mainframe concepts, COBOL workloads, Java services, Linux environments, automation and modern development practices in a single project.**
+A **IA Generativa** entra como uma camada adicional de inteligência, permitindo explorar novas formas de interação com sistemas, automação, análise de informações e apoio às operações.
 
 ---
 
-# 🟢 `SYSTEM ONLINE`
+## 🖥️ Arquitetura orientada a Control Center
+
+O conceito do projeto é semelhante a um **centro de operações tecnológico**.
+
+Em vez de tratar cada tecnologia como um projeto isolado, o MCP Control Center busca criar uma visão integrada:
+
+**Entrada → Processamento → Automação → Execução → Monitoramento → Analytics → Inteligência**
+
+Essa abordagem permite organizar diferentes componentes dentro de uma arquitetura única e evolutiva.
+
+---
+
+## ⚙️ Tecnologias
+
+### ☕ Java / Spring Boot
+
+O backend utiliza **Java** e **Spring Boot** como base para construção da aplicação, organização da arquitetura e criação dos serviços da plataforma.
+
+A estrutura foi pensada para permitir evolução gradual do sistema, adicionando novos módulos e endpoints conforme o projeto cresce.
+
+### 🟢 COBOL / Mainframe
+
+COBOL representa o núcleo **Mainframe/Bach Processing** da arquitetura.
+
+A presença do COBOL não é apenas estética: o projeto foi concebido para aproximar conceitos de processamento batch e sistemas corporativos tradicionais de uma camada moderna de controle e automação.
+
+### 🐍 Python
+
+Python atua como uma tecnologia de **automação e processamento**, permitindo construir rotinas auxiliares, automações e integrações.
+
+### 🐧 Linux / WSL
+
+O ambiente Linux/WSL funciona como laboratório de desenvolvimento e execução, aproximando o projeto de ambientes reais utilizados em infraestrutura, servidores, automação e sistemas corporativos.
+
+### 🌐 JavaScript / HTML / CSS
+
+A camada frontend utiliza tecnologias web para construir a interface visual do Control Center.
+
+O objetivo é transformar operações técnicas em uma experiência visual semelhante a um **painel operacional**, com módulos, indicadores, controles e informações organizadas.
+
+### 🤖 Generative AI
+
+A **IA Generativa** é um dos pilares conceituais do projeto.
+
+A proposta é explorar como modelos de IA podem trabalhar junto de ferramentas tradicionais de desenvolvimento e operações, auxiliando em tarefas como:
+
+- interpretação de informações;
+- automação;
+- análise de dados;
+- geração de conteúdo técnico;
+- suporte à operação;
+- interação com sistemas;
+- evolução de workflows.
+
+A ideia não é substituir os componentes tradicionais, mas criar uma camada de **inteligência sobre a infraestrutura existente**.
+
+---
+
+## 🏗️ Visão de arquitetura
+
+O MCP Control Center segue uma filosofia modular.
 
 ```text
-╔══════════════════════════════════════════════════════════════╗
-║                  MCP CONTROL CENTER                         ║
-║                                                              ║
-║  STATUS       : ONLINE                                       ║
-║  PLATFORM     : WINDOWS + WSL / LINUX                       ║
-║  BACKEND      : JAVA + SPRING BOOT                           ║
-║  MAINFRAME    : COBOL / IBM Z CONCEPTS                       ║
-║  AUTOMATION   : PYTHON / BATCH                              ║
-║  FRONTEND     : HTML + CSS + JAVASCRIPT                     ║
-║  VERSIONING   : GIT                                          ║
-║  REPOSITORY   : GITHUB                                       ║
-║  IDE          : VISUAL STUDIO CODE                           ║
-║  AI           : GENERATIVE AI ASSISTED DEVELOPMENT           ║
-╚══════════════════════════════════════════════════════════════╝
+                  ┌─────────────────────────┐
+                  │     USER / OPERATOR     │
+                  └────────────┬────────────┘
+                               │
+                               ▼
+                  ┌─────────────────────────┐
+                  │    CONTROL CENTER UI    │
+                  │     WEB INTERFACE      │
+                  └────────────┬────────────┘
+                               │
+                               ▼
+                  ┌─────────────────────────┐
+                  │     JAVA / SPRING       │
+                  │      APPLICATION        │
+                  └────────────┬────────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             │                 │                 │
+             ▼                 ▼                 ▼
+        ┌─────────┐       ┌──────────┐      ┌──────────┐
+        │  COBOL  │       │  PYTHON  │      │  LINUX   │
+        │  BATCH  │       │AUTOMATION│      │   WSL    │
+        └────┬────┘       └─────┬────┘      └────┬─────┘
+             │                  │                 │
+             └──────────────────┼─────────────────┘
+                                ▼
+                     ┌────────────────────┐
+                     │ ANALYTICS / LOGS   │
+                     └─────────┬──────────┘
+                               │
+                               ▼
+                     ┌────────────────────┐
+                     │   GENERATIVE AI    │
+                     │ INTELLIGENCE LAYER │
+                     └────────────────────┘
 ```
 
 ---
 
-# 🟢 `PROJECT OVERVIEW`
+## 🎛️ Control Center
 
-O **MCP Control Center** é um projeto experimental e profissional de engenharia de software voltado à criação de um **centro de controle tecnológico inspirado em ambientes Mainframe, operações de infraestrutura, automação e sistemas corporativos**.
+A interface foi concebida com inspiração em **centrais de operação Mainframe**, terminais corporativos e dashboards modernos.
 
-A proposta combina tecnologias tradicionais do ecossistema corporativo, como **COBOL e conceitos de Mainframe**, com tecnologias modernas de desenvolvimento, incluindo **Java, Spring Boot, JavaScript, HTML, CSS, Linux, Git e GitHub**.
+A visão de evolução do projeto contempla módulos como:
 
-O projeto também incorpora **IA generativa como ferramenta de apoio ao desenvolvimento**, utilizada para acelerar análise, implementação, documentação, resolução de problemas, exploração de alternativas arquiteturais e evolução do código.
+- **Dashboard**
+- **Professores**
+- **Jobs**
+- **COBOL Batch**
+- **Analytics**
+- **Logs**
+- **Configurações**
+
+Além disso, existe a proposta de incorporar uma experiência de operação inspirada em **teclados de controle F1–F12**, comandos operacionais e execução de Jobs.
+
+Esses elementos fazem parte da evolução planejada da plataforma e serão implementados progressivamente.
 
 ---
 
-# 🟢 `ARCHITECTURE`
+## 🔐 Cybersecurity
+
+A arquitetura visual e conceitual também incorpora princípios de **Cybersecurity**, principalmente pela preocupação com:
+
+- logs;
+- rastreabilidade;
+- controle de execução;
+- automação;
+- monitoramento;
+- análise de eventos;
+- organização de operações.
+
+O objetivo é evoluir o projeto para que segurança e observabilidade façam parte da arquitetura, e não sejam adicionadas somente posteriormente.
+
+---
+
+## 📊 Analytics e Observabilidade
+
+Uma plataforma de controle precisa responder rapidamente:
+
+**O que está acontecendo?**
+
+**Qual processo está executando?**
+
+**Qual Job terminou?**
+
+**Existe algum erro?**
+
+**Qual componente gerou o evento?**
+
+**Qual foi o resultado da execução?**
+
+Por isso, Analytics e Logs fazem parte da arquitetura planejada do MCP Control Center.
+
+A intenção é transformar informações técnicas em **dados operacionais compreensíveis**, permitindo uma visão mais próxima de um verdadeiro centro de operações.
+
+---
+
+## 🚀 Filosofia do projeto
+
+O MCP Control Center não foi criado simplesmente para demonstrar uma única linguagem.
+
+A proposta é demonstrar **integração de conhecimentos**.
 
 ```text
-                         ┌─────────────────────┐
-                         │   MCP CONTROL       │
-                         │      CENTER         │
-                         └──────────┬──────────┘
-                                    │
-                 ┌──────────────────┼──────────────────┐
-                 │                  │                  │
-                 ▼                  ▼                  ▼
-        ┌────────────────┐ ┌────────────────┐ ┌────────────────┐
-        │    FRONTEND    │ │     BACKEND    │ │   AUTOMATION   │
-        │                │ │                │ │                │
-        │ HTML           │ │ Java           │ │ Python         │
-        │ CSS            │ │ Spring Boot    │ │ Batch          │
-        │ JavaScript     │ │ REST           │ │ File Processing│
-        └────────────────┘ └────────────────┘ └────────────────┘
-                 │                  │                  │
-                 └──────────────────┼──────────────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │   LINUX / WSL       │
-                         │   TERMINAL / GIT     │
-                         └──────────┬──────────┘
-                                    │
-                                    ▼
-                         ┌─────────────────────┐
-                         │       GITHUB        │
-                         │   SOURCE CONTROL    │
-                         └─────────────────────┘
-```
-
----
-
-# 🟢 `TECHNOLOGY STACK`
-
-## ☕ Java
-
-Utilizado como uma das principais tecnologias do backend.
-
-O projeto utiliza Java para estruturar a camada de aplicação, modelos, serviços e lógica de negócio.
-
-**Principais conceitos utilizados:**
-
-- Object-Oriented Programming
-- Classes
-- Models
-- Services
-- REST architecture
-- Application structure
-- Dependency management
-
----
-
-## 🍃 Spring Boot
-
-O **Spring Boot** fornece a estrutura principal da aplicação backend.
-
-O projeto utiliza a arquitetura do Spring Boot para organizar componentes, endpoints e serviços da aplicação.
-
-```text
-Spring Boot
-     │
-     ├── Controller
-     │
-     ├── Service
-     │
-     ├── Model
-     │
-     └── Application
-```
-
----
-
-## 🟢 COBOL
-
-COBOL representa a camada **Mainframe / Enterprise Computing** do projeto.
-
-O desenvolvimento com COBOL é utilizado para explorar conceitos associados a processamento corporativo, programas batch e lógica tradicional de sistemas empresariais.
-
-O projeto também está alinhado ao estudo de tecnologias do ecossistema IBM Z.
-
-### Conceitos relacionados
-
-```text
+MAINFRAME
+    +
 COBOL
- ├── Batch Processing
- ├── Mainframe
- ├── IBM Z
- ├── JCL Concepts
- ├── Data Processing
- └── Enterprise Systems
-```
-
----
-
-# 🟢 `JAVASCRIPT`
-
-JavaScript é utilizado na camada de interface e interação da aplicação.
-
-Responsabilidades:
-
-- Interação com elementos da interface
-- Eventos
-- Controle de componentes
-- Comunicação com funcionalidades do sistema
-- Dinamismo da interface
-
----
-
-# 🟢 `HTML`
-
-HTML fornece a estrutura dos elementos da interface.
-
-A organização da interface utiliza componentes estruturais para apresentar:
-
-- Dashboard
-- Menus
-- Painéis
-- Controles
-- Informações de execução
-- Status
-- Logs
-
----
-
-# 🟢 `CSS`
-
-CSS é utilizado para construir a identidade visual do sistema.
-
-O objetivo visual do MCP Control Center é inspirado em:
-
-```text
-MAINFRAME TERMINAL
-       +
-CYBER OPERATIONS CENTER
-       +
-CONTROL DECK
-       +
-ENTERPRISE SOFTWARE
-```
-
-Características visuais:
-
-- Dark interface
-- Terminal aesthetic
-- High contrast
-- Neon/green terminal identity
-- Panels
-- Control interfaces
-- Visual hierarchy
-- Mainframe-inspired layout
-
----
-
-# 🟢 `PYTHON & AUTOMATION`
-
-Python faz parte do ecossistema de automação utilizado nos estudos e projetos associados ao MCP Control Center.
-
-Aplicações possíveis:
-
-- Batch automation
-- File processing
-- CSV processing
-- Reports
-- Data processing
-- System automation
-- Integration with COBOL workloads
-
-A combinação:
-
-```text
-COBOL
-  +
+    +
+JAVA
+    +
 PYTHON
-  +
+    +
 LINUX
+    +
+AUTOMATION
+    +
+CYBERSECURITY
+    +
+GENERATIVE AI
+    =
+MCP CONTROL CENTER
 ```
 
-representa uma das principais linhas técnicas do projeto.
+É justamente essa combinação que define a identidade do projeto.
+
+O objetivo é construir uma plataforma onde conceitos de **Mainframe e sistemas corporativos tradicionais** possam conversar com **desenvolvimento moderno, automação, Linux, observabilidade e Inteligência Artificial**.
 
 ---
 
-# 🟢 `LINUX / WSL`
-
-O ambiente Linux é utilizado como laboratório de desenvolvimento e execução.
-
-O projeto utiliza **WSL — Windows Subsystem for Linux** para trabalhar com ferramentas e conceitos próximos de ambientes Linux corporativos.
-
-Principais atividades:
+## 🟢 SYSTEM STATUS
 
 ```text
-Linux
- ├── Terminal
- ├── Bash
- ├── File System
- ├── Processes
- ├── Permissions
- ├── Java
- ├── Maven
- ├── Git
- └── COBOL
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│              MCP CONTROL CENTER                      │
+│                                                      │
+│  MAINFRAME        [ ONLINE ]                         │
+│  AUTOMATION       [ ONLINE ]                         │
+│  JAVA             [ ONLINE ]                         │
+│  COBOL            [ ONLINE ]                         │
+│  PYTHON           [ ONLINE ]                         │
+│  LINUX / WSL      [ ONLINE ]                         │
+│  GENERATIVE AI    [ ACTIVE ]                         │
+│                                                      │
+│              SYSTEM STATUS: ONLINE                   │
+│                                                      │
+└──────────────────────────────────────────────────────┘
 ```
 
----
-
-# 🟢 `TERMINAL`
-
-O terminal é uma parte importante do fluxo de desenvolvimento.
-
-Através dele são executadas operações como:
-
-```bash
-git
-java
-mvn
-python
-bash
-```
-
-O terminal também permite trabalhar diretamente com:
-
-- Arquivos
-- Diretórios
-- Processos
-- Compilação
-- Execução
-- Versionamento
-- Automação
-
----
-
-# 🟢 `GIT`
-
-Git é utilizado como sistema de controle de versão.
-
-Principais operações:
-
-```text
-git init
-git add
-git commit
-git branch
-git remote
-git push
-git pull
-git status
-```
-
-O Git permite acompanhar a evolução do projeto e manter um histórico estruturado das alterações.
-
----
-
-# 🟢 `GITHUB`
-
-O GitHub funciona como plataforma de hospedagem e colaboração do projeto.
-
-Repositório:
-
-**`phsmottanerd/mcp-control-center`**
-
-O fluxo utilizado é:
-
-```text
-LOCAL DEVELOPMENT
-       │
-       ▼
-     GIT
-       │
-       ▼
-    COMMIT
-       │
-       ▼
-     PUSH
-       │
-       ▼
-    GITHUB
-```
-
-O projeto foi versionado localmente e publicado através do Git utilizando a branch principal:
-
-```text
-main
-```
-
----
-
-# 🟢 `VISUAL STUDIO CODE`
-
-O **Visual Studio Code** é utilizado como ambiente principal de desenvolvimento.
-
-Responsabilidades:
-
-- Edição do código
-- Terminal integrado
-- Organização do projeto
-- Desenvolvimento Java
-- Desenvolvimento frontend
-- Manipulação de arquivos
-- Integração com Git
-- Apoio ao desenvolvimento assistido por IA
-
----
-
-# 🟢 `MAVEN`
-
-Maven é utilizado para gerenciamento e construção do projeto Java.
-
-Principais funções:
-
-```text
-Maven
- ├── Dependencies
- ├── Build
- ├── Test
- ├── Package
- └── Application lifecycle
-```
-
-Arquivo principal:
-
-```text
-pom.xml
-```
-
----
-
-# 🟢 `GENERATIVE AI`
-
-A **IA generativa** faz parte do processo de desenvolvimento do MCP Control Center.
-
-Ela não é apresentada apenas como uma tecnologia externa, mas como uma ferramenta de **engenharia assistida por IA**.
-
-Durante o desenvolvimento, IA generativa pode apoiar atividades como:
-
-```text
-ANÁLISE
-   ↓
-PLANEJAMENTO
-   ↓
-IMPLEMENTAÇÃO
-   ↓
-DEBUGGING
-   ↓
-DOCUMENTAÇÃO
-   ↓
-REFACTORING
-   ↓
-VALIDAÇÃO
-```
-
-### Aplicações da IA no desenvolvimento
-
-- Análise de código
-- Explicação de estruturas
-- Geração assistida de código
-- Identificação de erros
-- Sugestões de arquitetura
-- Documentação técnica
-- Automação de tarefas
-- Desenvolvimento incremental
-- Exploração de APIs
-- Apoio ao aprendizado de novas tecnologias
-
-> **Human developer + Generative AI = AI-assisted software engineering**
-
-A IA é utilizada como ferramenta de apoio. As decisões de arquitetura, validação, execução e integração permanecem sob controle do desenvolvedor.
-
----
-
-# 🟢 `DEVELOPMENT ENVIRONMENT`
-
-```text
-HOST
-│
-├── Windows
-│
-├── Visual Studio Code
-│
-└── Git
-      │
-      ▼
-    WSL
-      │
-      └── Linux
-           │
-           ├── Java
-           ├── Maven
-           ├── COBOL
-           ├── Python
-           └── Bash
-```
-
----
-
-# 🟢 `PROJECT STRUCTURE`
-
-```text
-mcp-control-center/
-│
-├── src/
-│   └── main/
-│       └── java/
-│
-├── frontend/
-│
-├── cobol/
-│
-├── pom.xml
-│
-├── mvnw
-├── mvnw.cmd
-│
-├── .gitignore
-├── .gitattributes
-│
-└── README.md
-```
-
-A estrutura é organizada para permitir a evolução do projeto em diferentes camadas tecnológicas.
-
----
-
-# 🟢 `CORE CONCEPT`
-
-O conceito central do projeto é aproximar diferentes mundos da tecnologia:
-
-```text
-                 ┌───────────────┐
-                 │   MAINFRAME   │
-                 │     COBOL     │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │   AUTOMATION  │
-                 │    PYTHON     │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │    BACKEND    │
-                 │ JAVA / SPRING │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │   FRONTEND    │
-                 │ HTML/CSS/JS   │
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │     LINUX     │
-                 │ TERMINAL / GIT│
-                 └───────┬───────┘
-                         │
-                         ▼
-                 ┌───────────────┐
-                 │    GITHUB     │
-                 └───────────────┘
-```
-
----
-
-# 🟢 `ENGINEERING APPROACH`
-
-O MCP Control Center é desenvolvido de forma incremental.
-
-Cada componente é construído, executado, testado e validado antes da evolução para a próxima etapa.
-
-```text
-PLAN
- ↓
-CODE
- ↓
-RUN
- ↓
-TEST
- ↓
-DEBUG
- ↓
-DOCUMENT
- ↓
-COMMIT
- ↓
-PUSH
-```
-
-Essa abordagem permite transformar o projeto em um laboratório prático de:
-
-- Software Engineering
-- Backend Development
-- Frontend Development
-- Linux
-- Mainframe
-- COBOL
-- Automation
-- Dev Tools
-- Git
-- AI-assisted Development
-
----
-
-# 🟢 `CURRENT OBJECTIVE`
-
-O objetivo do MCP Control Center é evoluir para uma plataforma visual capaz de centralizar diferentes operações técnicas:
-
-```text
-┌─────────────────────────────────────────┐
-│          MCP CONTROL CENTER             │
-├─────────────────────────────────────────┤
-│                                         │
-│  DASHBOARD                              │
-│  PROFESSORES                            │
-│  JOBS                                   │
-│  COBOL BATCH                            │
-│  ANALYTICS                              │
-│  LOGS                                   │
-│  CONFIGURAÇÕES                          │
-│                                         │
-│  [ EXECUTAR COBOL JOB ]                 │
-│                                         │
-└─────────────────────────────────────────┘
-```
-
----
-
-# 🟢 `TECHNOLOGY MATRIX`
-
-| Tecnologia | Função |
-|---|---|
-| ☕ Java | Backend |
-| 🍃 Spring Boot | Framework backend |
-| 🟢 COBOL | Mainframe / Enterprise Computing |
-| 🐍 Python | Automação |
-| 🌐 HTML | Estrutura frontend |
-| 🎨 CSS | Interface visual |
-| ⚡ JavaScript | Interatividade |
-| 🐧 Linux / WSL | Ambiente de desenvolvimento |
-| 🖥️ Bash / Terminal | Operações e automação |
-| 📦 Maven | Build e dependências |
-| 🔧 Git | Versionamento |
-| 🐙 GitHub | Repositório e colaboração |
-| 💻 VS Code | Desenvolvimento |
-| 🤖 Generative AI | Desenvolvimento assistido por IA |
-
----
-
-# 🟢 `DEVELOPER`
-
-## **Paulo Henrique Santana Motta**
-
-**Systems Analysis • Linux • Mainframe • COBOL • Python • Cybersecurity • Automation**
-
-Projeto desenvolvido como laboratório prático para integração entre tecnologias tradicionais e modernas de desenvolvimento.
-
----
-
-# 🔴 `IMPORTANT`
-
-```text
-THIS PROJECT IS UNDER CONTINUOUS DEVELOPMENT.
-
-Architecture, interfaces, integrations and features
-may evolve as new development stages are implemented.
-```
-
----
-
-# 🟢 `STATUS`
-
-```text
-╔══════════════════════════════════════╗
-║       MCP CONTROL CENTER             ║
-║                                      ║
-║  SOURCE CODE      : AVAILABLE        ║
-║  GITHUB           : ONLINE           ║
-║  MAIN BRANCH      : main             ║
-║  DEVELOPMENT      : ACTIVE           ║
-║  AI ASSISTED      : ENABLED         ║
-║  MAINFRAME FOCUS  : ENABLED         ║
-║                                      ║
-║             SYSTEM ONLINE            ║
-╚══════════════════════════════════════╝
-```
-
----
-
-## 🟢 `LICENSE`
-
-Este projeto é destinado a fins de estudo, desenvolvimento, experimentação tecnológica e demonstração de competências práticas.
-
----
-
-# 🟢 `END OF TRANSMISSION`
-
-```text
-> MCP CONTROL CENTER
-> MAINFRAME MODE
-> DEVELOPMENT MODE
-> SYSTEM ONLINE
-> END TRANSMISSION_
-```
+**MCP Control Center — conectando Mainframe, Automação, Desenvolvimento, Cybersecurity e Inteligência Artificial em uma única visão operacional.**
