@@ -1,7 +1,3 @@
-<div align="center">
-
-<font color="#00FF41">
-
 from pathlib import Path
 
 svg = r'''<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="210" viewBox="0 0 1100 210">
@@ -40,7 +36,6 @@ path = Path("/mnt/data/mcp-control-center-header.svg")
 path.write_text(svg, encoding="utf-8")
 print(f"Arquivo criado: {path}")
 
-`SYSTEM STATUS: ONLINE`
 
 </font>
 
