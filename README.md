@@ -1,762 +1,265 @@
-<div align="center">
 
-<font color="#00FF41">
+# MCP Control Center
 
-# MCP CONTROL CENTER
+**MCP Control Center** é uma plataforma experimental de **controle, automação e integração de tecnologias de software**, construída com uma arquitetura inspirada em ambientes corporativos de **Mainframe, operações de TI, automação de processos e sistemas distribuídos**.
 
-### MAINFRAME • AUTOMATION • CYBERSECURITY • JAVA • COBOL • PYTHON • GENERATIVE AI
-
-`SYSTEM STATUS: ONLINE`
-
-</font>
-
-</div>
-
-<font color="#00FF41">
-
-## 🟢 Sobre o Projeto
-
-O **MCP Control Center** é uma plataforma experimental de desenvolvimento criada para integrar tecnologias de **Backend, Frontend, automação, Linux, Mainframe, controle de versão e Inteligência Artificial Generativa** em um único ambiente técnico.
-
-O projeto combina tecnologias tradicionais do ambiente corporativo, como **COBOL e conceitos Mainframe**, com tecnologias modernas como **Java, Spring Boot, Python, JavaScript e IA Generativa**.
-
-A proposta é construir uma arquitetura que possa evoluir para um verdadeiro **Control Center de operações, automação e processamento técnico**.
-
-</font>
-
----
-
-<div align="center">
-
-<font color="#00FF41">
-
-## 🟢 TECHNOLOGY STACK
-
-| Tecnologia | Função |
-|---|---|
-| ☕ Java | Backend e lógica da aplicação |
-| 🍃 Spring Boot | APIs e serviços |
-| 🟢 COBOL | Mainframe e processamento Batch |
-| 🐍 Python | Automação e processamento |
-| ⚡ JavaScript | Interatividade |
-| 🌐 HTML5 | Estrutura Frontend |
-| 🎨 CSS3 | Interface visual |
-| 🐧 Linux / WSL | Ambiente operacional |
-| ⌨️ Terminal | Administração e execução |
-| 📦 Maven | Build e dependências |
-| 🔧 Git | Versionamento |
-| 🐙 GitHub | Repositório |
-| 💻 VS Code | Desenvolvimento |
-| 🤖 Generative AI | Assistência de engenharia |
-
-</font>
-
-</div>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Arquitetura
-
-A arquitetura do projeto foi pensada para conectar diferentes camadas tecnológicas:
+O projeto nasceu com uma ideia central: **unir tecnologias tradicionais de missão crítica com ferramentas modernas de desenvolvimento e Inteligência Artificial Generativa**, criando um ambiente único para organizar, monitorar e executar diferentes componentes de uma operação tecnológica.
 
 ```text
-Frontend
-   │
-   ├── HTML
-   ├── CSS
-   └── JavaScript
-          │
-          ▼
-Backend
-   │
-   ├── Java
-   └── Spring Boot
-          │
-          ▼
-Automation
-   │
-   ├── Python
-   └── COBOL
-          │
-          ▼
-Operating Environment
-   │
-   └── Linux / WSL
-          │
-          ▼
-Development Infrastructure
-   │
-   ├── Terminal
-   ├── Git
-   ├── GitHub
-   ├── Maven
-   └── VS Code
-          │
-          ▼
-Generative AI
+                         ┌─────────────────────────────┐
+                         │      MCP CONTROL CENTER     │
+                         │   MAINFRAME OPERATIONS      │
+                         └──────────────┬──────────────┘
+                                        │
+              ┌─────────────────────────┼─────────────────────────┐
+              │                         │                         │
+              ▼                         ▼                         ▼
+       ┌─────────────┐          ┌─────────────┐          ┌─────────────┐
+       │    COBOL    │          │    JAVA     │          │   PYTHON    │
+       │    BATCH    │          │ SPRING BOOT │          │ AUTOMATION  │
+       └──────┬──────┘          └──────┬──────┘          └──────┬──────┘
+              │                        │                         │
+              └────────────────────────┼─────────────────────────┘
+                                       ▼
+                            ┌─────────────────────┐
+                            │   CONTROL CENTER    │
+                            │   PROCESSING LAYER  │
+                            └──────────┬──────────┘
+                                       │
+                  ┌────────────────────┼────────────────────┐
+                  ▼                    ▼                    ▼
+             ┌─────────┐        ┌────────────┐       ┌────────────┐
+             │ LINUX   │        │ ANALYTICS  │       │    LOGS    │
+             │   WSL   │        │ & METRICS  │       │ MONITORING │
+             └─────────┘        └────────────┘       └────────────┘
+                                       │
+                                       ▼
+                              ┌──────────────────┐
+                              │ GENERATIVE AI    │
+                              │ INTELLIGENCE     │
+                              └──────────────────┘
 ```
 
-A arquitetura permite trabalhar com diferentes tecnologias dentro de um mesmo fluxo de desenvolvimento.
+## 🟢 Uma ponte entre Mainframe e tecnologia moderna
 
-</font>
+O MCP Control Center foi pensado para representar uma arquitetura onde tecnologias com décadas de presença no mercado podem coexistir com ferramentas modernas.
+
+No núcleo conceitual estão **COBOL e Mainframe**, representando processamento corporativo e workloads tradicionais, enquanto **Java/Spring Boot, Python, Linux/WSL e JavaScript** fornecem uma camada moderna para desenvolvimento, automação, integração e controle.
+
+A **IA Generativa** entra como uma camada adicional de inteligência, permitindo explorar novas formas de interação com sistemas, automação, análise de informações e apoio às operações.
 
 ---
 
-<font color="#00FF41">
+## 🖥️ Arquitetura orientada a Control Center
 
-## 🟢 Java ☕
+O conceito do projeto é semelhante a um **centro de operações tecnológico**.
 
-Java é uma das principais tecnologias utilizadas no Backend do projeto.
+Em vez de tratar cada tecnologia como um projeto isolado, o MCP Control Center busca criar uma visão integrada:
 
-A linguagem é responsável pela implementação da aplicação, organização das classes, modelos, métodos e regras de negócio.
+**Entrada → Processamento → Automação → Execução → Monitoramento → Analytics → Inteligência**
 
-### Conceitos utilizados
-
-- Classes
-- Objetos
-- Métodos
-- Pacotes
-- Encapsulamento
-- Organização modular
-- APIs
-- Processamento Backend
-
-O projeto utiliza o pacote principal:
-
-```text
-com.paulohenrique.mcp_control_center
-```
-
-A estrutura Java foi criada para permitir a evolução da aplicação para novos módulos e serviços.
-
-</font>
+Essa abordagem permite organizar diferentes componentes dentro de uma arquitetura única e evolutiva.
 
 ---
 
-<font color="#00FF41">
+## ⚙️ Tecnologias
 
-## 🟢 Spring Boot 🍃
+### ☕ Java / Spring Boot
 
-O Spring Boot fornece a estrutura principal do Backend.
+O backend utiliza **Java** e **Spring Boot** como base para construção da aplicação, organização da arquitetura e criação dos serviços da plataforma.
 
-A utilização do framework permite organizar a aplicação em componentes responsáveis por receber requisições, processar informações e retornar respostas.
+A estrutura foi pensada para permitir evolução gradual do sistema, adicionando novos módulos e endpoints conforme o projeto cresce.
 
-### Principais conceitos
+### 🟢 COBOL / Mainframe
 
-- Application
-- Controllers
-- Models
-- Services
-- REST
-- Endpoints
-- Dependency Management
+COBOL representa o núcleo **Mainframe/Bach Processing** da arquitetura.
 
-Um dos recursos desenvolvidos no projeto está relacionado ao endpoint:
+A presença do COBOL não é apenas estética: o projeto foi concebido para aproximar conceitos de processamento batch e sistemas corporativos tradicionais de uma camada moderna de controle e automação.
 
-```text
-GET /professores
-```
+### 🐍 Python
 
-A arquitetura pode ser expandida posteriormente para outros módulos do Control Center.
+Python atua como uma tecnologia de **automação e processamento**, permitindo construir rotinas auxiliares, automações e integrações.
 
-</font>
+### 🐧 Linux / WSL
 
----
+O ambiente Linux/WSL funciona como laboratório de desenvolvimento e execução, aproximando o projeto de ambientes reais utilizados em infraestrutura, servidores, automação e sistemas corporativos.
 
-<font color="#00FF41">
+### 🌐 JavaScript / HTML / CSS
 
-## 🟢 COBOL / Mainframe
+A camada frontend utiliza tecnologias web para construir a interface visual do Control Center.
 
-COBOL representa uma das conexões mais importantes do projeto com o universo **Mainframe e sistemas corporativos**.
+O objetivo é transformar operações técnicas em uma experiência visual semelhante a um **painel operacional**, com módulos, indicadores, controles e informações organizadas.
 
-A utilização de COBOL no contexto do projeto está relacionada a conceitos de:
+### 🤖 Generative AI
 
-- processamento Batch;
-- processamento de registros;
-- sistemas corporativos;
-- processamento sequencial;
-- integração com automação;
-- arquitetura Mainframe.
+A **IA Generativa** é um dos pilares conceituais do projeto.
 
-### Ecossistema relacionado
+A proposta é explorar como modelos de IA podem trabalhar junto de ferramentas tradicionais de desenvolvimento e operações, auxiliando em tarefas como:
 
-```text
-IBM Z
-z/OS
-JCL
-CICS
-Db2
-USS
-VSAM
-Batch Processing
-```
-
-A proposta é aproximar tecnologias tradicionais de processamento corporativo de ferramentas modernas de desenvolvimento e automação.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Python 🐍
-
-Python é utilizado como tecnologia complementar para automação e processamento.
-
-Sua utilização permite desenvolver ferramentas auxiliares para:
-
-- processamento de arquivos;
-- CSV;
-- geração de relatórios;
+- interpretação de informações;
 - automação;
-- processamento de dados;
-- execução de tarefas;
-- integração entre processos.
+- análise de dados;
+- geração de conteúdo técnico;
+- suporte à operação;
+- interação com sistemas;
+- evolução de workflows.
 
-Python também pode atuar como camada de automação entre diferentes componentes do ambiente.
-
-</font>
+A ideia não é substituir os componentes tradicionais, mas criar uma camada de **inteligência sobre a infraestrutura existente**.
 
 ---
 
-<font color="#00FF41">
+## 🏗️ Visão de arquitetura
 
-## 🟢 JavaScript ⚡
-
-JavaScript é utilizado na camada de interação do Frontend.
-
-Entre suas responsabilidades estão:
-
-- eventos da interface;
-- interação com componentes;
-- comunicação com APIs;
-- requisições HTTP;
-- atualização dinâmica;
-- controle da interface.
-
-Fluxo básico:
+O MCP Control Center segue uma filosofia modular.
 
 ```text
-USUÁRIO
-   ↓
-JAVASCRIPT
-   ↓
-HTTP REQUEST
-   ↓
-SPRING BOOT
-   ↓
+                  ┌─────────────────────────┐
+                  │     USER / OPERATOR     │
+                  └────────────┬────────────┘
+                               │
+                               ▼
+                  ┌─────────────────────────┐
+                  │    CONTROL CENTER UI    │
+                  │     WEB INTERFACE      │
+                  └────────────┬────────────┘
+                               │
+                               ▼
+                  ┌─────────────────────────┐
+                  │     JAVA / SPRING       │
+                  │      APPLICATION        │
+                  └────────────┬────────────┘
+                               │
+             ┌─────────────────┼─────────────────┐
+             │                 │                 │
+             ▼                 ▼                 ▼
+        ┌─────────┐       ┌──────────┐      ┌──────────┐
+        │  COBOL  │       │  PYTHON  │      │  LINUX   │
+        │  BATCH  │       │AUTOMATION│      │   WSL    │
+        └────┬────┘       └─────┬────┘      └────┬─────┘
+             │                  │                 │
+             └──────────────────┼─────────────────┘
+                                ▼
+                     ┌────────────────────┐
+                     │ ANALYTICS / LOGS   │
+                     └─────────┬──────────┘
+                               │
+                               ▼
+                     ┌────────────────────┐
+                     │   GENERATIVE AI    │
+                     │ INTELLIGENCE LAYER │
+                     └────────────────────┘
+```
+
+---
+
+## 🎛️ Control Center
+
+A interface foi concebida com inspiração em **centrais de operação Mainframe**, terminais corporativos e dashboards modernos.
+
+A visão de evolução do projeto contempla módulos como:
+
+- **Dashboard**
+- **Professores**
+- **Jobs**
+- **COBOL Batch**
+- **Analytics**
+- **Logs**
+- **Configurações**
+
+Além disso, existe a proposta de incorporar uma experiência de operação inspirada em **teclados de controle F1–F12**, comandos operacionais e execução de Jobs.
+
+Esses elementos fazem parte da evolução planejada da plataforma e serão implementados progressivamente.
+
+---
+
+## 🔐 Cybersecurity
+
+A arquitetura visual e conceitual também incorpora princípios de **Cybersecurity**, principalmente pela preocupação com:
+
+- logs;
+- rastreabilidade;
+- controle de execução;
+- automação;
+- monitoramento;
+- análise de eventos;
+- organização de operações.
+
+O objetivo é evoluir o projeto para que segurança e observabilidade façam parte da arquitetura, e não sejam adicionadas somente posteriormente.
+
+---
+
+## 📊 Analytics e Observabilidade
+
+Uma plataforma de controle precisa responder rapidamente:
+
+**O que está acontecendo?**
+
+**Qual processo está executando?**
+
+**Qual Job terminou?**
+
+**Existe algum erro?**
+
+**Qual componente gerou o evento?**
+
+**Qual foi o resultado da execução?**
+
+Por isso, Analytics e Logs fazem parte da arquitetura planejada do MCP Control Center.
+
+A intenção é transformar informações técnicas em **dados operacionais compreensíveis**, permitindo uma visão mais próxima de um verdadeiro centro de operações.
+
+---
+
+## 🚀 Filosofia do projeto
+
+O MCP Control Center não foi criado simplesmente para demonstrar uma única linguagem.
+
+A proposta é demonstrar **integração de conhecimentos**.
+
+```text
+MAINFRAME
+    +
+COBOL
+    +
 JAVA
-   ↓
-RESPONSE
-   ↓
-JAVASCRIPT
-   ↓
-INTERFACE
-```
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 HTML5 🌐
-
-HTML5 representa a estrutura da interface.
-
-Pode ser utilizado para organizar:
-
-- Header
-- Navigation
-- Dashboard
-- Panels
-- Forms
-- Tables
-- Buttons
-- Menus
-- Áreas de controle
-
-O HTML fornece a estrutura sobre a qual JavaScript e CSS trabalham.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 CSS3 🎨
-
-CSS é responsável pela apresentação visual do projeto.
-
-A identidade visual proposta para o MCP Control Center utiliza uma linguagem inspirada em:
-
-- Mainframe;
-- Terminal;
-- Cybersecurity;
-- Control Centers;
-- interfaces industriais;
-- painéis técnicos;
-- sistemas operacionais;
-- ambientes corporativos.
-
-### Direção visual
-
-**Dark Interface + Terminal Green + Cyber UI + Depth + Glow**
-
-A intenção é criar uma interface tecnológica e operacional, evitando uma aparência genérica de aplicação web.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Linux / WSL 🐧
-
-O ambiente de desenvolvimento utiliza Linux através do **Windows Subsystem for Linux (WSL)**.
-
-O WSL permite utilizar ferramentas e comandos Linux diretamente no ambiente Windows.
-
-### Ambiente
-
-```text
-Windows
-   │
-   ▼
-WSL
-   │
-   ▼
-Linux
-   │
-   ├── Java
-   ├── Maven
-   ├── Python
-   ├── Git
-   ├── COBOL
-   └── Terminal
-```
-
-O ambiente Linux também aproxima o desenvolvimento das condições encontradas em servidores, infraestrutura, automação e ambientes corporativos.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Terminal ⌨️
-
-O Terminal é parte fundamental do desenvolvimento.
-
-Comandos utilizados no fluxo de trabalho incluem:
-
-```bash
-pwd
-cd
-ls
-mkdir
-git status
-git add
-git commit
-git push
-java
-mvn
-python
-```
-
-O Terminal é utilizado para:
-
-- navegar pelo projeto;
-- criar arquivos e diretórios;
-- executar aplicações;
-- compilar;
-- testar;
-- diagnosticar problemas;
-- administrar o ambiente Linux;
-- trabalhar com Git.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Maven 📦
-
-Maven é utilizado no gerenciamento do projeto Java.
-
-Suas principais responsabilidades incluem:
-
-- gerenciamento de dependências;
-- compilação;
-- testes;
-- empacotamento;
-- ciclo de vida da aplicação.
-
-Arquivo principal:
-
-```text
-pom.xml
-```
-
-O Maven centraliza informações necessárias para construção e gerenciamento do Backend.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Git 🔧
-
-Git é utilizado para controle de versão.
-
-Fluxo básico:
-
-```text
-WORKSPACE
-    ↓
-git status
-    ↓
-git add
-    ↓
-git commit
-    ↓
-git push
-    ↓
-GITHUB
-```
-
-O Git permite:
-
-- registrar alterações;
-- manter histórico;
-- recuperar versões;
-- controlar branches;
-- preparar o código para publicação;
-- acompanhar a evolução do projeto.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 GitHub 🐙
-
-GitHub é utilizado como repositório remoto e plataforma de publicação do projeto.
-
-O repositório:
-
-```text
-mcp-control-center
-```
-
-utiliza a branch principal:
-
-```text
-main
-```
-
-O GitHub também funciona como vitrine técnica para apresentar a arquitetura, tecnologias e evolução do projeto.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Visual Studio Code 💻
-
-O Visual Studio Code é utilizado como ambiente de desenvolvimento.
-
-O projeto pode ser trabalhado dentro do editor utilizando:
-
-- Java;
-- Spring Boot;
-- JavaScript;
-- HTML;
-- CSS;
-- Python;
-- COBOL;
-- Terminal;
-- Git.
-
-A integração entre editor, Terminal e Git permite executar grande parte do ciclo de desenvolvimento dentro do mesmo ambiente.
-
-</font>
-
----
-
-<div align="center">
-
-<font color="#00FF41">
-
-# 🤖 GENERATIVE AI
-
-### INTELLIGENCE ASSISTING THE DEVELOPMENT PROCESS
-
-</font>
-
-</div>
-
-<font color="#00FF41">
-
-## 🟢 Inteligência Artificial Generativa
-
-A **IA Generativa é uma parte importante do processo de desenvolvimento do MCP Control Center**.
-
-Ela é utilizada como ferramenta de apoio à engenharia de software, aprendizado, análise e resolução de problemas.
-
-### Aplicações
-
-- assistência na programação;
-- análise de código;
-- debugging;
-- documentação;
-- arquitetura;
-- refatoração;
-- investigação de erros;
-- explicação de conceitos;
-- aprendizagem tecnológica;
-- apoio à implementação.
-
-Fluxo de desenvolvimento assistido:
-
-```text
-DESENVOLVEDOR
-      ↓
-PROBLEMA
-      ↓
-IA GENERATIVA
-      ↓
-ANÁLISE
-      ↓
-IMPLEMENTAÇÃO
-      ↓
-TESTE
-      ↓
-VALIDAÇÃO
-      ↓
-GIT
-      ↓
-GITHUB
-```
-
-A IA Generativa é utilizada como **ferramenta de assistência**, enquanto análise, validação, testes e decisões técnicas continuam fazendo parte do processo de desenvolvimento.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Desenvolvimento Assistido por IA
-
-A combinação utilizada no projeto pode ser representada por:
-
-```text
-HUMAN ENGINEERING
-       +
-GENERATIVE AI
-       +
-IDE
-       +
-TERMINAL
-       +
+    +
+PYTHON
+    +
 LINUX
-       +
-VERSION CONTROL
-       +
-TESTING
+    +
+AUTOMATION
+    +
+CYBERSECURITY
+    +
+GENERATIVE AI
+    =
+MCP CONTROL CENTER
 ```
 
-Essa abordagem permite utilizar Inteligência Artificial como parte do fluxo moderno de desenvolvimento sem abandonar a compreensão técnica do código.
+É justamente essa combinação que define a identidade do projeto.
 
-</font>
+O objetivo é construir uma plataforma onde conceitos de **Mainframe e sistemas corporativos tradicionais** possam conversar com **desenvolvimento moderno, automação, Linux, observabilidade e Inteligência Artificial**.
 
 ---
 
-<font color="#00FF41">
-
-## 🟢 Estrutura do Projeto
+## 🟢 SYSTEM STATUS
 
 ```text
-mcp-control-center/
-│
-├── src/
-│   └── main/
-│       └── java/
-│           └── com/
-│               └── paulohenrique/
-│                   └── mcp_control_center/
-│
-├── frontend/
-│
-├── cobol/
-│
-├── pom.xml
-├── mvnw
-├── mvnw.cmd
-├── .gitignore
-├── .gitattributes
-└── README.md
+┌──────────────────────────────────────────────────────┐
+│                                                      │
+│              MCP CONTROL CENTER                      │
+│                                                      │
+│  MAINFRAME        [ ONLINE ]                         │
+│  AUTOMATION       [ ONLINE ]                         │
+│  JAVA             [ ONLINE ]                         │
+│  COBOL            [ ONLINE ]                         │
+│  PYTHON           [ ONLINE ]                         │
+│  LINUX / WSL      [ ONLINE ]                         │
+│  GENERATIVE AI    [ ACTIVE ]                         │
+│                                                      │
+│              SYSTEM STATUS: ONLINE                   │
+│                                                      │
+└──────────────────────────────────────────────────────┘
 ```
 
-A estrutura permite a evolução progressiva das camadas Backend, Frontend e automação.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Control Center
-
-A visão de evolução do projeto é transformar o MCP Control Center em uma interface centralizada para gerenciamento de componentes técnicos.
-
-Módulos planejados:
-
-```text
-DASHBOARD
-PROFESSORES
-JOBS
-COBOL BATCH
-ANALYTICS
-LOGS
-CONFIGURAÇÕES
-```
-
-Também faz parte da visão do projeto uma interface de controle inspirada em painéis operacionais, incluindo comandos e funções reais de execução.
-
-</font>
-
----
-
-<font color="#00FF41">
-
-## 🟢 Arquitetura de Integração
-
-```text
-                 MCP CONTROL CENTER
-                         │
-          ┌──────────────┼──────────────┐
-          │              │              │
-          ▼              ▼              ▼
-      FRONTEND        BACKEND       AUTOMATION
-          │              │              │
-     HTML/CSS/JS    JAVA/SPRING    PYTHON/COBOL
-          │              │              │
-          └──────────────┼──────────────┘
-                         │
-                         ▼
-                    LINUX / WSL
-                         │
-                         ▼
-                      TERMINAL
-                         │
-                         ▼
-                     GIT/GITHUB
-                         │
-                         ▼
-                  GENERATIVE AI
-```
-
-</font>
-
----
-
-<div align="center">
-
-<font color="#00FF41">
-
-## 🟢 Development Workflow
-
-`PLAN` → `CODE` → `TEST` → `DEBUG` → `VALIDATE` → `COMMIT` → `PUSH`
-
-</font>
-
-</div>
-
-<font color="#00FF41">
-
-O processo de desenvolvimento combina programação, Terminal, Linux, Git, documentação, testes e assistência de IA Generativa.
-
-A abordagem prioriza evolução incremental e validação das funcionalidades antes da expansão do projeto.
-
-</font>
-
----
-
-<div align="center">
-
-<font color="#00FF41">
-
-# 🟢 SYSTEM STATUS
-
-| COMPONENT | STATUS |
-|---|---|
-| ☕ Java | 🟢 ONLINE |
-| 🍃 Spring Boot | 🟢 ONLINE |
-| 🟢 COBOL | 🟢 ACTIVE |
-| 🐍 Python | 🟢 ACTIVE |
-| ⚡ JavaScript | 🟢 ACTIVE |
-| 🌐 HTML | 🟢 ACTIVE |
-| 🎨 CSS | 🟢 ACTIVE |
-| 🐧 Linux / WSL | 🟢 ONLINE |
-| 📦 Maven | 🟢 ONLINE |
-| 🔧 Git | 🟢 ONLINE |
-| 🐙 GitHub | 🟢 ONLINE |
-| 💻 VS Code | 🟢 ONLINE |
-| 🤖 Generative AI | 🟢 ACTIVE |
-
-</font>
-
-</div>
-
----
-
-<font color="#FF3030">
-
-## 🔴 Development Notice
-
-O MCP Control Center permanece em desenvolvimento contínuo.
-
-Alguns módulos apresentados como arquitetura ou visão futura representam **roadmap do projeto** e não devem ser interpretados automaticamente como funcionalidades concluídas.
-
-</font>
-
----
-
-<div align="center">
-
-<font color="#00FF41">
-
-## 🟢 Developer
-
-### PAULO HENRIQUE SANTANA MOTTA
-
-`JAVA` • `COBOL` • `PYTHON` • `LINUX` • `CYBERSECURITY` • `AUTOMATION` • `MAINFRAME` • `GENERATIVE AI`
-
-<br>
-
-### MCP CONTROL CENTER
-
-`MAINFRAME • AUTOMATION • CYBER • JAVA • COBOL • PYTHON • LINUX • AI`
-
-<br>
-
-`>>> SYSTEM READY_`
-
-</font>
-
-</div>
-
-
-
-
-
-   
-
+**MCP Control Center — conectando Mainframe, Automação, Desenvolvimento, Cybersecurity e Inteligência Artificial em uma única visão operacional.**
