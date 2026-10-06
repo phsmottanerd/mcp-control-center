@@ -1,104 +1,18 @@
-from pathlib import Path
+<div align="center">
 
-svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
-  <title id="title">MCP Control Center — Mainframe Automation Cybersecurity</title>
-  <desc id="desc">Animated neon green mainframe control center header.</desc>
+<font color="#00FF41">
 
-  <defs>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+# MCP CONTROL CENTER
 
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="10" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
+### MAINFRAME • AUTOMATION • CYBERSECURITY • JAVA • COBOL • PYTHON • GENERATIVE AI
 
-    <linearGradient id="scan" x1="0" x2="1">
-      <stop offset="0%" stop-color="#00ff41" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00ff41" stop-opacity=".9"/>
-      <stop offset="100%" stop-color="#00ff41" stop-opacity="0"/>
-    </linearGradient>
+`SYSTEM STATUS: ONLINE`
 
-    <style>
-      .green { fill:#00ff41; font-family:monospace; text-anchor:middle; }
-      .title { font-size:48px; font-weight:800; letter-spacing:5px; }
-      .main { font-size:22px; font-weight:700; letter-spacing:2px; }
-      .status { font-size:20px; font-weight:700; letter-spacing:3px; }
-      .small { font-size:14px; letter-spacing:4px; }
-      .line { stroke:#00ff41; stroke-width:2; fill:none; opacity:.65; }
-      .glow { filter:url(#glow); }
-      .soft { filter:url(#softGlow); opacity:.22; }
-    </style>
-  </defs>
+</font>
 
-  <!-- Dark terminal background -->
-  <rect width="1200" height="330" rx="18" fill="#050805"/>
+</div>
 
-  <!-- Subtle scanline grid -->
-  <g opacity=".10" stroke="#00ff41">
-    <path d="M40 55H1160 M40 95H1160 M40 135H1160 M40 175H1160 M40 215H1160 M40 255H1160 M40 295H1160"/>
-    <path d="M100 35V310 M200 35V310 M300 35V310 M400 35V310 M500 35V310 M600 35V310 M700 35V310 M800 35V310 M900 35V310 M1000 35V310 M1100 35V310"/>
-  </g>
-
-  <!-- Decorative frame -->
-  <path class="line glow" d="M40 55V35H180 M1020 35H1160V55 M40 275V295H180 M1020 295H1160V275"/>
-  <path class="line" d="M260 35H940 M260 295H940"/>
-
-  <!-- Soft ambient glow -->
-  <ellipse cx="600" cy="135" rx="420" ry="80" fill="#00ff41" class="soft">
-    <animate attributeName="opacity" values=".08;.25;.08" dur="4s" repeatCount="indefinite"/>
-  </ellipse>
-
-  <!-- Main title -->
-  <text x="600" y="105" class="green title glow">
-    MCP CONTROL CENTER
-    <animate attributeName="opacity" values="0;1;1;0" dur="7s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Main technology line -->
-  <text x="600" y="155" class="green main glow">
-    MAINFRAME • AUTOMATION • CYBERSECURITY
-    <animate attributeName="opacity" values="0;1;1;0" dur="7s" begin=".8s" repeatCount="indefinite"/>
-  </text>
-
-  <text x="600" y="190" class="green main glow">
-    JAVA • COBOL • PYTHON • GENERATIVE AI
-    <animate attributeName="opacity" values="0;1;1;0" dur="7s" begin="1.6s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Status -->
-  <rect x="365" y="215" width="470" height="45" rx="8" fill="none" stroke="#00ff41" stroke-width="2" opacity=".65">
-    <animate attributeName="opacity" values=".25;.9;.25" dur="2.4s" repeatCount="indefinite"/>
-  </rect>
-
-  <circle cx="395" cy="237" r="6" fill="#00ff41" filter="url(#glow)">
-    <animate attributeName="opacity" values=".2;1;.2" dur="1.2s" repeatCount="indefinite"/>
-  </circle>
-
-  <text x="610" y="244" class="green status glow">
-    SYSTEM STATUS: ONLINE
-    <animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Bottom terminal message -->
-  <text x="600" y="285" class="green small">
-    [ SYSTEM INITIALIZATION COMPLETE ]
-    <animate attributeName="opacity" values="0;1;1;0" dur="6s" begin="2.5s" repeatCount="indefinite"/>
-  </text>
-
-  <!-- Moving scan beam -->
-  <rect x="80" y="270" width="180" height="2" fill="url(#scan)" filter="url(#glow)">
-    <animate attributeName="x" from="80" to="940" dur="3.5s" repeatCount="indefinite"/>
-  </rect>
-</svg
+<font color="#00FF41">
 
 ## 🟢 Sobre o Projeto
 
