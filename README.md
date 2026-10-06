@@ -2,9 +2,43 @@
 
 <font color="#00FF41">
 
-# MCP CONTROL CENTER
+from pathlib import Path
 
-### MAINFRAME • AUTOMATION • CYBERSECURITY • JAVA • COBOL • PYTHON • GENERATIVE AI
+svg = r'''<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="210" viewBox="0 0 1100 210">
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .g { fill:#00ff41; font-family:monospace; text-anchor:middle; filter:url(#glow); }
+      .a { font-size:28px; font-weight:bold; }
+      .b { font-size:22px; }
+      .c { font-size:18px; }
+      .line { stroke:#00ff41; stroke-width:2; filter:url(#glow); }
+      .pulse { animation:pulse 3.5s ease-in-out infinite; }
+      .fade1 { animation:fade 7s ease-in-out infinite; }
+      .fade2 { animation:fade 7s ease-in-out 1.2s infinite; }
+      .fade3 { animation:fade 7s ease-in-out 2.4s infinite; }
+      .fade4 { animation:fade 7s ease-in-out 3.6s infinite; }
+      .fade5 { animation:fade 7s ease-in-out 4.8s infinite; }
+      @keyframes fade { 0%,100%{opacity:0} 15%,70%{opacity:1} 85%{opacity:0} }
+      @keyframes pulse { 0%,100%{opacity:.25} 50%{opacity:1} }
+    </style>
+  </defs>
+  <rect width="1100" height="210" rx="12" fill="#050805"/>
+  <rect x="18" y="18" width="1064" height="174" rx="8" fill="none" class="line pulse"/>
+  <text x="550" y="52" class="g a">MCP CONTROL CENTER</text>
+  <text x="550" y="91" class="g b fade1">MAINFRAME • AUTOMATION • CYBERSECURITY</text>
+  <text x="550" y="122" class="g b fade2">JAVA • COBOL • PYTHON • GENERATIVE AI</text>
+  <text x="550" y="161" class="g c fade3">SYSTEM STATUS: ONLINE</text>
+  <text x="550" y="183" class="g c fade4">[ SYSTEM INITIALIZATION COMPLETE ]</text>
+  <text x="550" y="109" class="g c fade5">▰</text>
+</svg>'''
+
+path = Path("/mnt/data/mcp-control-center-header.svg")
+path.write_text(svg, encoding="utf-8")
+print(f"Arquivo criado: {path}")
 
 `SYSTEM STATUS: ONLINE`
 
