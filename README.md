@@ -1,47 +1,104 @@
 from pathlib import Path
 
-svg = r'''<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="210" viewBox="0 0 1100 210">
+svg = '''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-labelledby="title desc">
+  <title id="title">MCP Control Center — Mainframe Automation Cybersecurity</title>
+  <desc id="desc">Animated neon green mainframe control center header.</desc>
+
   <defs>
     <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
       <feGaussianBlur stdDeviation="4" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
+
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="scan" x1="0" x2="1">
+      <stop offset="0%" stop-color="#00ff41" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ff41" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#00ff41" stop-opacity="0"/>
+    </linearGradient>
+
     <style>
-      .g { fill:#00ff41; font-family:monospace; text-anchor:middle; filter:url(#glow); }
-      .a { font-size:28px; font-weight:bold; }
-      .b { font-size:22px; }
-      .c { font-size:18px; }
-      .line { stroke:#00ff41; stroke-width:2; filter:url(#glow); }
-      .pulse { animation:pulse 3.5s ease-in-out infinite; }
-      .fade1 { animation:fade 7s ease-in-out infinite; }
-      .fade2 { animation:fade 7s ease-in-out 1.2s infinite; }
-      .fade3 { animation:fade 7s ease-in-out 2.4s infinite; }
-      .fade4 { animation:fade 7s ease-in-out 3.6s infinite; }
-      .fade5 { animation:fade 7s ease-in-out 4.8s infinite; }
-      @keyframes fade { 0%,100%{opacity:0} 15%,70%{opacity:1} 85%{opacity:0} }
-      @keyframes pulse { 0%,100%{opacity:.25} 50%{opacity:1} }
+      .green { fill:#00ff41; font-family:monospace; text-anchor:middle; }
+      .title { font-size:48px; font-weight:800; letter-spacing:5px; }
+      .main { font-size:22px; font-weight:700; letter-spacing:2px; }
+      .status { font-size:20px; font-weight:700; letter-spacing:3px; }
+      .small { font-size:14px; letter-spacing:4px; }
+      .line { stroke:#00ff41; stroke-width:2; fill:none; opacity:.65; }
+      .glow { filter:url(#glow); }
+      .soft { filter:url(#softGlow); opacity:.22; }
     </style>
   </defs>
-  <rect width="1100" height="210" rx="12" fill="#050805"/>
-  <rect x="18" y="18" width="1064" height="174" rx="8" fill="none" class="line pulse"/>
-  <text x="550" y="52" class="g a">MCP CONTROL CENTER</text>
-  <text x="550" y="91" class="g b fade1">MAINFRAME • AUTOMATION • CYBERSECURITY</text>
-  <text x="550" y="122" class="g b fade2">JAVA • COBOL • PYTHON • GENERATIVE AI</text>
-  <text x="550" y="161" class="g c fade3">SYSTEM STATUS: ONLINE</text>
-  <text x="550" y="183" class="g c fade4">[ SYSTEM INITIALIZATION COMPLETE ]</text>
-  <text x="550" y="109" class="g c fade5">▰</text>
-</svg>'''
 
-path = Path("/mnt/data/mcp-control-center-header.svg")
-path.write_text(svg, encoding="utf-8")
-print(f"Arquivo criado: {path}")
+  <!-- Dark terminal background -->
+  <rect width="1200" height="330" rx="18" fill="#050805"/>
 
+  <!-- Subtle scanline grid -->
+  <g opacity=".10" stroke="#00ff41">
+    <path d="M40 55H1160 M40 95H1160 M40 135H1160 M40 175H1160 M40 215H1160 M40 255H1160 M40 295H1160"/>
+    <path d="M100 35V310 M200 35V310 M300 35V310 M400 35V310 M500 35V310 M600 35V310 M700 35V310 M800 35V310 M900 35V310 M1000 35V310 M1100 35V310"/>
+  </g>
 
-</font>
+  <!-- Decorative frame -->
+  <path class="line glow" d="M40 55V35H180 M1020 35H1160V55 M40 275V295H180 M1020 295H1160V275"/>
+  <path class="line" d="M260 35H940 M260 295H940"/>
 
-</div>
+  <!-- Soft ambient glow -->
+  <ellipse cx="600" cy="135" rx="420" ry="80" fill="#00ff41" class="soft">
+    <animate attributeName="opacity" values=".08;.25;.08" dur="4s" repeatCount="indefinite"/>
+  </ellipse>
 
-<font color="#00FF41">
+  <!-- Main title -->
+  <text x="600" y="105" class="green title glow">
+    MCP CONTROL CENTER
+    <animate attributeName="opacity" values="0;1;1;0" dur="7s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Main technology line -->
+  <text x="600" y="155" class="green main glow">
+    MAINFRAME • AUTOMATION • CYBERSECURITY
+    <animate attributeName="opacity" values="0;1;1;0" dur="7s" begin=".8s" repeatCount="indefinite"/>
+  </text>
+
+  <text x="600" y="190" class="green main glow">
+    JAVA • COBOL • PYTHON • GENERATIVE AI
+    <animate attributeName="opacity" values="0;1;1;0" dur="7s" begin="1.6s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Status -->
+  <rect x="365" y="215" width="470" height="45" rx="8" fill="none" stroke="#00ff41" stroke-width="2" opacity=".65">
+    <animate attributeName="opacity" values=".25;.9;.25" dur="2.4s" repeatCount="indefinite"/>
+  </rect>
+
+  <circle cx="395" cy="237" r="6" fill="#00ff41" filter="url(#glow)">
+    <animate attributeName="opacity" values=".2;1;.2" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <text x="610" y="244" class="green status glow">
+    SYSTEM STATUS: ONLINE
+    <animate attributeName="opacity" values=".35;1;.35" dur="2.4s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Bottom terminal message -->
+  <text x="600" y="285" class="green small">
+    [ SYSTEM INITIALIZATION COMPLETE ]
+    <animate attributeName="opacity" values="0;1;1;0" dur="6s" begin="2.5s" repeatCount="indefinite"/>
+  </text>
+
+  <!-- Moving scan beam -->
+  <rect x="80" y="270" width="180" height="2" fill="url(#scan)" filter="url(#glow)">
+    <animate attributeName="x" from="80" to="940" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+</svg
 
 ## 🟢 Sobre o Projeto
 
