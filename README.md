@@ -263,3 +263,18 @@ O objetivo é construir uma plataforma onde conceitos de **Mainframe e sistemas 
 ```
 
 **MCP Control Center — conectando Mainframe, Automação, Desenvolvimento, Cybersecurity e Inteligência Artificial em uma única visão operacional.**
+
+<img width="1295" height="579" alt="02" src="https://github.com/user-attachments/assets/5c07b919-7465-48ab-9f65-701c22889ea2" />
+<img width="1369" height="637" alt="04" src="https://github.com/user-attachments/assets/ded89d2d-4d14-46b3-966e-fb7d550ba9c0" />
+<img width="1288" height="600" alt="022" src="https://github.com/user-attachments/assets/41253b59-29b9-4f30-858d-39c6e222ab3f" />
+<img width="1246" height="637" alt="-120" src="https://github.com/user-attachments/assets/fc61067d-6249-4806-9f57-9693951bdc1e" />
+<img width="1284" height="589" alt="012" src="https://github.com/user-attachments/assets/2910f000-b8e1-4c10-a682-ee6c22584499" />
+<img width="1289" height="646" alt="010" src="https://github.com/user-attachments/assets/18e580a7-1a07-4cde-a9d0-b28ed8843bf2" />
+<img width="1337" height="601" alt="08" src="https://github.com/user-attachments/assets/3172fb67-4dd7-476d-a46c-8ed8f69782f9" />
+
+
+
+
+
+
+
